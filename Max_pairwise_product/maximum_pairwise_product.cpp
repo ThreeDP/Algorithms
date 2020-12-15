@@ -42,10 +42,8 @@ long long MaxPairwiseProdFast(const vector<int>& numbers)
     }
     return ((long long)(numbers[one_index])) * numbers[two_index];
 }
-
-int main (void)
-{
-/* TESTE DE STRESS 
+int test (void) 
+{   
     while (true) 
     {
         int n = rand() % 1000 + 2;
@@ -73,7 +71,12 @@ int main (void)
             cout << "OK ===================\n";
         }
     }
-*/
+    return 0;
+}
+
+int main (void)
+{
+    test();
     int n;
     cin >> n;
     vector<int> numbers(n);
